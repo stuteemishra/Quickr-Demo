@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_home">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorMainTitle"
+        android:text="POPULAR CATEGORIES"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardElevation="4dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:id="@+id/furniture_opt"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/furniture"
+                />
+
+            <ImageView
+                android:id="@+id/mobile_opt"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/mobile"
+                />
+
+            <ImageView
+                android:id="@+id/electronics_opt"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/electronics" />
+
+
+            <ImageView
+                android:id="@+id/bike_opt"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:src="@drawable/motorcycle"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_row="1"
+                android:layout_column="0"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="Furnitures"/>
+
+            <TextView
+                android:layout_row="1"
+                android:layout_column="1"
+                android:paddingLeft="24dp"
+                android:paddingStart="24dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="Mobile"/>
+            <TextView
+                android:layout_row="1"
+                android:layout_column="2"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="Electronics"/>
+            <TextView
+                android:layout_row="1"
+                android:layout_column="3"
+                android:paddingLeft="28dp"
+                android:paddingStart="28dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="Bikes"/>
+
+            <ImageView
+                android:id="@+id/house_option"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/house"/>
+
+            <ImageView
+                android:id="@+id/cars_opt"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/car"/>
+
+            <ImageView
+                android:id="@+id/pets_option"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:paddingLeft="@dimen/medium_padding"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingRight="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:paddingTop="12dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/pets"
+                />
+
+            <TextView
+                android:layout_row="3"
+                android:layout_column="0"
+                android:paddingLeft="24dp"
+                android:paddingStart="24dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="House"/>
+            <TextView
+                android:layout_row="3"
+                android:layout_column="1"
+                android:paddingLeft="28dp"
+                android:paddingStart="28dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="Cars"/>
+            <TextView
+                android:layout_row="3"
+                android:layout_column="2"
+                android:paddingLeft="28dp"
+                android:paddingStart="28dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorCategoryLabel"
+                android:text="Pets"/>
+
+        </GridLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="@dimen/small_padding"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_gravity="start"
+            android:textColor="@color/colorMainTitle"
+            android:text="RECENT AD POSTS"/>
+
+    <ImageView
+        android:id="@+id/empty_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:src="@drawable/empty"/>
+
+    <TextView
+        android:id="@+id/no_post_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="No Ad Post!"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ad_post_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

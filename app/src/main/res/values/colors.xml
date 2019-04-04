@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#283593</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#00BFA5</color>
+    <color name="colorMainTitle">#000000</color>
+    <color name="colorDetailLabel">#424242</color>
+    <color name="colorCategoryLabel">#9E9E9E</color>
+    <color name="colorForHint">#E0E0E0</color>
+    <color name="colorForAdTitle">#212121</color>
+    <color name="colorForMarkFav">#B71C1C</color>
+</resources>
